@@ -2,6 +2,8 @@
 
 Live life beyond your desk. We'll handle the precision.
 
+🌐 **Live URL:** [https://altsocial-one.vercel.app](https://altsocial-one.vercel.app)
+
 Altradits is a frontend-first social media automation dashboard that allows you to compose, tailor, and schedule posts across multiple platforms (LinkedIn, Twitter, Facebook, Instagram, Dev.to, and Bitcoin Blogs) from a single unified interface.
 
 ## 🚀 Features

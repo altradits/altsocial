@@ -1,53 +1,99 @@
-# Vertex AI Studio Frontend App with Node.js Backend
+# Altradits | Precision Social Media Automation
 
-This repository contains a frontend and a Node.js backend, designed to run together.
-The backend acts as a proxy, handling Google Cloud API calls.
+> **Live Life Beyond Your Desk. We'll Handle the Precision.**
 
-This project is intended for demonstration and prototyping purposes only.
-It is not intended for use in a production environment.
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Faltradits%2Faltsocial)
+[![Live Demo](https://img.shields.io/badge/Demo-Live%20on%20Vercel-success?style=for-the-badge&logo=vercel)](https://altsocial-one.vercel.app)
 
-## Prerequisites
+🌐 **Live URL:** [https://altsocial-one.vercel.app](https://altsocial-one.vercel.app)
 
-To run this application locally, you need:
+---
 
-*   **[Google Cloud SDK / gcloud CLI](https://cloud.google.com/sdk/docs/install)**: Follow the instructions to install the SDK.
+## 🌟 Overview
 
-*   **gcloud Initialization**:
-    *   Initialize the gcloud CLI:
-        ```bash
-        gcloud init
-        ```
-    *   Authenticate for Application Default Credentials (needed to call Google Cloud APIs):
-        ```bash
-        gcloud auth application-default login
-        ```
+**Altradits** is a modern social media automation platform designed for founders, creators, and marketing professionals. It enables unified composing, tailoring, cross-platform previewing, and scheduling across major social networks and publishing channels.
 
-*   **Node.js and npm**: Ensure you have Node.js and its package manager, `npm`, installed on your machine.
+### Supported Channels
+- **LinkedIn** (Professional insights & thought leadership)
+- **X / Twitter** (Short-form updates & threads)
+- **Instagram** (Visual-first storytelling & hashtags)
+- **Facebook** (Community updates & link posts)
+- **Dev.to** (Technical articles & developer discussions)
+- **Bitcoin Blogs** (Crypto, Lightning Network, & Web3 content)
 
-## Project Structure
+---
 
-The project is organized into two main directories:
+## 🚀 Key Features
 
-*   `frontend/`: Contains the Frontend application code.
-*   `backend/`: Contains the Node.js/Express server code to proxy Google Cloud API calls.
+- **Unified Composer**: Write once, preview across all social channels in real-time.
+- **AI Image & Caption Generation**: Upload visuals and generate platform-optimized captions powered by Google Gemini.
+- **Cross-Platform Mock Previews**: See authentic pixel-perfect feeds before hitting publish or scheduling.
+- **Drafts & Scheduled Posts**: Full workflow with local management and calendar queue.
+- **Lightning Network Integration**: Bitcoin Lightning payment support for automated subscription flows.
 
-## Backend Environment Variables
+---
 
-The `backend/.env.local` file is automatically generated when you download this application.
-It contains essential Google Cloud environment variables pre-configured based on your project settings at the time of download.
+## 🛠️ Architecture & Tech Stack
 
-The variables set in `backend/.env.local` are:
-*   `API_BACKEND_PORT`: The port the backend API server listens on (e.g., `5000`).
-*   `API_PAYLOAD_MAX_SIZE`: The maximum size of the request payload accepted by the backend server (e.g., `5mb`).
-*   `GOOGLE_CLOUD_LOCATION`: The Google Cloud region associated with your project.
-*   `GOOGLE_CLOUD_PROJECT`: Your Google Cloud Project ID.
+- **Frontend**: React 18, TypeScript, Vite, Tailwind CSS, Lucide Icons
+- **AI Engine**: Google Gemini API (`@google/genai`)
+- **Backend / Proxy**: Node.js & Express (Google Cloud Vertex AI proxy integration)
+- **Hosting & CDN**: Deployed on [Vercel](https://altsocial-one.vercel.app)
 
-**Note:** These variables are automatically populated during the download process.
-You can modify the values in `backend/.env.local` if you need to change them.
+---
 
-## Installation and Running the App
+## 💻 Local Development
 
-To install dependencies and run your Google Cloud Vertex AI Studio App locally, execute the following command:
+### Prerequisites
+- Node.js (v18+ recommended)
+- npm (v9+ recommended)
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/altradits/altsocial.git
+cd altsocial
+```
+
+### 2. Install dependencies
+```bash
+npm install
+```
+
+### 3. Run development servers
+```bash
+# Run both frontend & backend concurrently:
+npm run dev
+
+# Or run frontend only:
+npm run dev-frontend
+```
+
+Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+---
+
+## 🌐 Production Build & Deployment
+
+### Build Locally
+```bash
+npm run build
+```
+The optimized bundle will be generated in `frontend/dist/`.
+
+### Deploy to Vercel
+This repository is pre-configured with `vercel.json` for zero-configuration deployments.
 
 ```bash
-npm install && npm run dev
+npx vercel --prod
+```
+
+Or connect the repository on [Vercel Dashboard](https://vercel.com) using:
+- **Build Command**: `npm run build --prefix frontend`
+- **Output Directory**: `frontend/dist`
+
+---
+
+## 🔗 Live Application
+
+The production application is live at:
+👉 **[https://altsocial-one.vercel.app](https://altsocial-one.vercel.app)**
